@@ -1,5 +1,6 @@
 (function () {
     const DELAY_MS = 1000;
+    const VEIL_FADE_MS = 980;
     /** Moins de particules = moins de charge ; le rendu reste dense */
     const PARTICLE_COUNT = 720;
     const MIN_SPEED = 1.65;
@@ -85,6 +86,7 @@
         veil.setAttribute("aria-hidden", "true");
         veil.style.cssText =
             "position:fixed;inset:0;pointer-events:none;z-index:9998;margin:0;padding:0;box-sizing:border-box;" +
+            "opacity:1;" +
             "background:radial-gradient(ellipse 95% 90% at 100% 100%," +
             "rgba(255,125,82,0.5) 0%," +
             "rgba(215,62,32,0.22) 38%," +
@@ -189,8 +191,24 @@
             if (anyAlive) {
                 requestAnimationFrame(step);
             } else {
-                veil.remove();
                 canvas.remove();
+                veil.style.transition = `opacity ${VEIL_FADE_MS}ms cubic-bezier(0.33, 0.86, 0.42, 1)`;
+                requestAnimationFrame(() => {
+                    veil.style.opacity = "0";
+                });
+                let done = false;
+                const finish = () => {
+                    if (done) return;
+                    done = true;
+                    veil.removeEventListener("transitionend", onOpacityEnd);
+                    clearTimeout(fallback);
+                    veil.remove();
+                };
+                const onOpacityEnd = (e) => {
+                    if (e.propertyName === "opacity") finish();
+                };
+                veil.addEventListener("transitionend", onOpacityEnd);
+                const fallback = setTimeout(finish, VEIL_FADE_MS + 400);
             }
         }
 
