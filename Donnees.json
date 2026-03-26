@@ -1,0 +1,52 @@
+{
+    "equipe": [
+        {
+            "role": "hero",
+            "name": "Yuji",
+            "surname": "Itadori",
+            "image": "Assets/Yuji_Itadori_Saison_2.webp",
+            "birthdate": "2003-03-20",
+            "biography": "Yuji Itadori (虎いた杖どり 悠ゆう仁じ, Itadori Yūji?) est le principal protagoniste de Jujutsu Kaisen. \n            Il était initialement un élève de seconde du lycée Sugisawa 3. Toutefois, après avoir ingurgité l'un des Doigts de Ryomen Sukuna alors qu'il était aux portes de la mort, \n            Yuji est devenu le réceptacle du Roi des Fléaux. Il est alors mis à mort par les exorcistes mais obtient un sursis qu'à une seule condition : trouver et ingurgiter tous les Doigts de Sukuna.\n            Une fois qu'il aura accompli sa mission, Yuji sera exécuté. De ce fait, Yuji intègre l'école d'exorcisme de Tokyo sous la tutelle de Satoru Gojo et devient le camarade de classe de Megumi Fushiguro et Nobara Kugisaki."
+        },
+        {
+            "role": "protagonist",
+            "name": "Megumi",
+            "surname": "Fushiguro",
+            "image": "Assets/Megumi_Fushiguro_Saison_2.webp",
+            "birthdate": "2002-12-22",
+            "biography": "Megumi Fushiguro (伏ふし黒ぐろ恵めぐみ, Fushiguro Megumi?) est l'un des protagonistes de Jujutsu Kaisen.\n            Il est un élève de seconde de l'école d'exorcisme de Tokyo avec Yuji Itadori et Nobara Kugisaki.\n            Il n'est autre que le fils de Toji Fushiguro, un ancien membre du clan Zenin devenu tueur à gages, et est le petit frère par alliance de Tsumiki Fushiguro.\n            Après que son père et la mère de Tsumiki soient partis en laissant leurs enfants respectifs seuls, Megumi a été placé sous la tutelle de Satoru Gojo au détriment du clan Zenin.\n            C'est à partir de ce moment de sa vie qu'il décide d'embrasser la vie d'exorciste."
+        },
+        {
+            "role": "protagonist",
+            "name": "Nobara",
+            "surname": "Kugisaki",
+            "image": "Assets/Nobara_Kugisaki_Saison_2.webp",
+            "birthdate": "2002-08-07",
+            "biography": "Nobara Kugisaki (釘くぎ崎さき野の薔ば薇ら, Kugisaki Nobara?) est l'une des protagonistes de Jujutsu Kaisen.\n            Originaire de la campagne, Nobara atterrit à Tokyo dans le but de fuir son train de vie et de retrouver son amie d'enfance, Saori.\n            Elle est une élève de seconde à l'école d'exorcisme de Tokyo avec Yuji Itadori et Megumi Fushiguro, et est l'élève de Satoru Gojo."
+        },
+        {
+            "role": "mentor",
+            "name": "Satoru",
+            "surname": "Gojo",
+            "image": "Assets/Satoru_Gojo_Saison_2_29.webp",
+            "birthdate": "1989-12-07",
+            "biography": "Satoru Gojo (五ご条じょう悟さとる, Gojō Satoru?) est l'un des protagonistes de Jujutsu Kaisen.\n            Il est un exorciste de classe S, connu comme le plus fort d'entre eux, enseignant à l'école d'exorcisme de Tokyo et est en charge des élèves de secondes.\n            Il est le professeur principal de Yuji Itadori, Megumi Fushiguro et Nobara Kugisaki.\n            Il était également un ancien camarade de classe de Suguru Geto et de Shoko Ieiri à l'école d'exorcisme et un ancien élève de Masamichi Yaga.\n            Considéré comme la seule puissance du clan Gojo, Satoru est l'actuel chef de sa famille.\n            Il est un descendant d'un des plus grands exorcistes et esprits vengeurs du Japon, Sugawara no Michizane — au même titre que Yuta Okkotsu.\n            Il est l'héritier du Pouvoir de l'Infini et du Sixième Œil."
+        },
+        {
+            "role": "protagonist",
+            "name": "Maki",
+            "surname": "Zenin",
+            "image": "Assets/Maki_brandissant_Os_de_Dragon_CH148.webp",
+            "birthdate": "2002-01-20",
+            "biography": "Maki Zenin (禪ぜん院いん真ま希き, Zen'in Maki?) est un personnage majeur dans Jujutsu Kaisen et l'un des principaux protagonistes de la série préquelle, Jujutsu Kaisen 0, L'École d'Exorcisme de Tokyo.\n            Elle est actuellement en première à l'école d'exorcisme de Tokyo avec Yuta Okkotsu, Panda et Toge Inumaki.\n            Elle est notamment la sœur jumelle de Mai Zenin et la fille d'Ogi Zenin.\n            Originaire du clan Zenin, Maki a depuis toujours été rejetée par ces derniers pour son manque d'énergie occulte.\n            Elle a donc décidé de quitter son clan, et de devenir exorciste pour qu'ils regrettent de l'avoir maltraitée et en finir avec eux."
+        },
+        {
+            "role": "protagonist",
+            "name": "Toge",
+            "surname": "Inumaki",
+            "image": "Assets/Toge_Inumaki_Saison_2.webp",
+            "birthdate": "2001-10-23",
+            "biography": "Toge Inumaki (狗いぬ巻まき棘とげ, Inumaki Toge?) est un personnage de Jujutsu Kaisen et l'un des principaux protagonistes de la série préquelle, Jujutsu Kaisen 0, L'École d'Exorcisme de Tokyo.\n            Il est actuellement en première à l'école d'exorcisme de Tokyo avec Yuta Okkotsu, Maki Zenin et Panda.\n            Il est un descendant du clan Inumaki, issue d'une longue lignée d'exorcistes maîtrisant l'Incantation.\n            C'est donc pour éviter de maudire ses proches et se protéger lui même que Toge parle exclusivement à partir d'ingrédient de boulette de riz, développant un vocabulaire plus ou moins subtile."
+        }
+    ]
+}

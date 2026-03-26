@@ -1,0 +1,128 @@
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Ubuntu, Arial, sans-serif;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 2vw;
+    background-image: url(Assets/R.png);
+    background-size: cover;
+    background-position: 0vh 48vw;
+    background-opacity: 0.5;
+}
+
+.card {
+    float: none;
+    perspective: 800px;
+    width: clamp(11rem, 24vw, 18rem);
+    height: clamp(20rem, 55vh, 30rem);
+    flex-shrink: 0;
+}
+
+.card .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.45);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 0.5rem;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+}
+
+/* Face 1 : image uniquement */
+.card .front {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card .portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-front-placeholder {
+    font-size: 3rem;
+    color: #888;
+}
+
+/* Face 2 : texte */
+.card .back {
+    background:
+        linear-gradient(to top left, #f88181, #7cb0c9);
+    border: 0.25rem solid transparent;
+    color: #03446a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 1.2rem;
+    padding-top: 1.45rem;
+    overflow-y: auto;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card .back h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 0.35rem;
+    padding: 0;
+    color: #03446a;
+    text-align: center;
+}
+
+.card .back .role {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.15rem;
+    color: #03446a;
+    text-align: center;
+}
+
+.card .back .birthdate {
+    font-size: 0.65rem;
+    font-style: italic;
+    margin: 0;
+    padding: 0.15rem;
+    color: #555;
+    text-align: center;
+}
+
+.card .back .bio {
+    font-size: 0.55rem;
+    margin: 0.35rem 0 0;
+    padding: 0.2rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    color: #333;
+    line-height: 1.4;
+}
